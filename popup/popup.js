@@ -5,6 +5,11 @@ chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
         var new_url = url.replace("zh-tw", "en-us");
         chrome.tabs.update(tabs[0].id, { url: new_url });
     }
+    else if (url.includes("https://developer.mozilla.org/") && url.includes("zh-TW")) {
+        console.log("Redurect this page");
+        var new_url = url.replace("zh-TW", "en-US");
+        chrome.tabs.update(tabs[0].id, { url: new_url });
+    }
     else {
         console.log("Do not need to redirect this page");
     }
