@@ -1,8 +1,8 @@
 {
-  "name": "Microsoft zh-tw to en-us",
+  "name": "URL redirector",
   "version": "0.0.0.1",
   "manifest_version": 2,
-  "description": "An edge extension to redirect microsoft page from zh-tw to en-us",
+  "description": "An edge extension to redirect certain url",
   "icons": {
     "16": "icons/icon.png"
   },
